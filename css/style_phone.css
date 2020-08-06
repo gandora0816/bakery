@@ -1,0 +1,755 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	color: #2c2c2c;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+/*	max-width: 1920px;*/
+}
+@media (min-width: 410px) {
+body {
+	font-size: 0.6rem;
+}
+}
+@media (min-width: 480px) {
+body {
+	font-size: 1.0rem;
+}
+}
+@media (min-width: 768px) {
+body {
+	font-size: 1.6rem;
+}
+}
+@media (min-width: 1100px) {
+body {
+	font-size: 2.0rem;
+}
+}
+@media (min-width: 1510px) {
+body {
+	font-size: 2.4rem;
+}
+}
+@media (min-width: 1740px) {
+body {
+	font-size: 3.0rem;
+}
+}
+/*
+#page {
+	width: 90%;
+	margin: 0 auto;
+}
+*/
+a {
+	color: #1C84BD;
+	transition: 0.1s;
+	text-decoration: none;
+}
+header {
+	width: 95%;
+	margin: 0 auto;
+}
+header p {
+	text-align: center;
+}
+header img {
+	width: 25%;
+	max-width: 310px;
+}
+header h1 {
+	display: none;
+}
+header a:hover, #main a:hover, #scroll a:hover, footer a:hover, .breadcrumb a:hover {
+	opacity: 0.7;
+	transition: 0.2s;
+	text-decoration: underline;
+}
+.breadcrumb {
+	width: 95%;
+	margin: 1rem auto;
+}
+.breadcrumb ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+}
+.breadcrumb ul li:after {
+	content: ">";
+	margin: 0 1rem;
+}
+.breadcrumb ul li:last-child:after {
+	content: "";
+}
+#main_graphic ul {
+	margin: 0;
+}
+#main_graphic img {
+	width: 100%;
+	vertical-align: middle;
+}
+nav .nav_inner {
+/*	width: 60%;*/
+	width: 90%;
+	margin: auto;
+}
+nav ol {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0.5em 0;
+}
+nav ol li {
+	width: 25%;
+}
+nav ol li a {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-top: 31%;
+	border-left: 1px solid #2c2c2c;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: -9999px;
+	background-size: contain;
+	transition: 0.2s;
+}
+nav ol li a:hover {
+	transition: 0.2s;
+}
+nav ol li a:active {
+	transition: 0.1s;
+}
+nav ol li.contact a {
+	border-right: 1px solid #2c2c2c;
+}
+nav ol .menu a {
+	background-image: url(../images/menu_btn.png);
+}
+nav ol .commit a {
+	background-image: url(../images/commit_btn.png);
+}
+nav ol .info a {
+	background-image: url(../images/info_btn.png);
+}
+nav ol .contact a {
+	background-image: url(../images/contact_btn.png);
+}
+nav ol .menu a:hover,
+nav ol .menu a.now{
+	background-image: url(../images/menu_btn_hover.png);
+	transition: 0.2s;
+}
+nav ol .commit a:hover,
+nav ol .commit a.now {
+	background-image: url(../images/commit_btn_hover.png);
+	transition: 0.2s;
+}
+nav ol .info a:hover,
+nav ol .info a.now {
+	background-image: url(../images/info_btn_hover.png);
+	transition: 0.2s;
+}
+nav ol .contact a:hover,
+nav ol .contact a.now {
+	background-image: url(../images/contact_btn_hover.png);
+	transition: 0.2s;
+}
+/*
+nav ol .menu a:active {
+	background-image: url(../images/menu_btn_active.png);
+}
+nav ol .commit a:active {
+	background-image: url(../images/commit_btn_active.png);
+}
+nav ol .info a:active {
+	background-image: url(../images/info_btn_active.png);
+}
+nav ol .contact a:active {
+	background-image: url(../images/contact_btn_active.png);
+}
+*/
+#main {
+	width: 95%;
+	margin: auto;
+/*	display: flex;*/
+}
+#main section article {
+	border-top: 1px solid #b08323;
+	border-bottom: 1px solid #b08323;
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+}
+#main section article p,
+#main section article h1 {
+	margin: 0;
+}
+#main section article h1 {
+	padding-left: 3rem;
+}
+#main section article p img {
+	vertical-align: middle;
+	width: 80px;
+}
+section {
+/*	width: 73%;*/
+/*	max-width: 1400px;*/
+	width: 100%;
+}
+aside {
+	/*	float: right;*/
+	float: none;
+/*	width: 24%;*/
+	width: 100%;
+}
+aside .cream_box {
+	width: 49%;
+	max-width: 460px;
+	float: left;
+}
+aside .point_card {
+	width: 49%;
+	max-width: 460px;
+	float: right;
+}
+aside .twitter {
+	clear: both;
+}
+aside .twitter .twitter_tweet {
+	display: none;
+}
+aside .twitter .twitter_btn {
+	padding: 0.5em 0;
+	width: 165px;
+	margin: 0 auto;
+}
+aside p {
+	text-align: right;
+	margin: 0;
+/*	margin: 1rem 0;*/
+}
+aside img {
+	width: 100%;
+	max-width: 460px;
+	vertical-align: middle;
+}
+#scroll {
+/*	overflow: hidden;*/
+}
+#scroll p {
+/*	float: right;*/
+	text-align: center;;
+/*	padding-right: 2em;*/
+}
+#scroll a {
+	font-size: 0.8em;
+/*	大画面の時だけ*/
+	display: block;
+	height: 0;
+	width: 20%;
+	padding-top: 5%;
+	margin: 0 auto;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-image: url("../images/scroll_btn_hover.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#scroll a:hover {
+	background-image: url("../images/scroll_btn.png");
+}
+footer {
+	background-color: #b08323;
+	color: #fff;
+	padding: 2rem;
+}
+footer .footer_inner {
+	width: 70%;
+	margin: auto;
+/*	overflow: hidden;*/
+}
+footer .shop {
+	display: flex;
+	justify-content: center;
+}
+/*
+footer .shop_logo {
+	float: left;
+}
+*/
+footer .shop_logo p {
+	margin: 0;
+	text-align: center;
+}
+footer .shop_logo p img {
+	vertical-align: middle;
+	width: 100%;
+	max-width: 500px;
+}
+/*
+footer .shop_info {
+	float: left;
+}
+*/
+footer .shop_info h3 {
+	font-size: 2em;
+	margin: 0.3rem 0;
+}
+footer .shop_info p {
+	margin: 0.3em 0;
+}
+footer p.tel {
+	padding-left: 0.1em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+footer p.tel span:after {
+	content: ":";
+	margin: 0 0.3em;
+}
+footer p.copyright {
+	margin: 0.7em 0 0.3em;
+	text-align: center;
+}
+footer a {
+	color: #fff;
+}
+
+/*ここからindex*/
+
+#index section .commit p, #index aside .cream_box p, #index aside .twitter p {
+	margin: 0;
+}
+#index section img {
+	width: 100%;
+	max-width: 1400px;
+	vertical-align: middle;
+}
+#index section .news_box ul {
+	padding: 0;
+}
+#index section .news_box ul li {
+	list-style-type: none;
+	padding-bottom: 0.3em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid rgba(44,44,44,0.4);
+	/*	カラーコードで#2c2c2c*/
+	align-items: baseline;
+}
+#index section .news_box ul li span, #index section .news_box ul li time {
+	display: inline-block;
+}
+#index section .news_box ul li span.category {
+	font-size: 0.8em;
+	font-weight: bold;
+	width: 10%;
+	text-align: center;
+}
+#index section .news_box ul li time {
+	width: 18%;
+}
+.news {
+	background-color: #FFF962;
+	border-radius: 10px;
+}
+.event {
+	background-color: #FF6868;
+	border-radius: 10px;
+}
+.detail {
+	padding-left: 2.5rem;
+}
+
+/*ここまでindex*/
+/*ここからbase*/
+
+/*ここまでbase*/
+/*ここからmenu*/
+#menu section img {
+	width: 100%;
+	max-width: 1400px;
+	vertical-align: middle;
+	border-radius: 15px;
+}
+/*ここまでmenu*/
+/*ここからcommit*/
+#commit .commit_main {
+	background-image: url(../images/commit_image_2.jpg);
+	background-color: rgba(255,255,255,0.2);
+	background-blend-mode: lighten;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3rem;
+	margin-bottom: 1rem;
+	border-radius: 15px;
+}
+#commit .commit_main p {
+	margin: 0 0 2rem;
+	color: #fff;
+	text-shadow: 2px 2px 10px #2c2c2c;
+}
+#commit .commit_main p:first-child {
+	margin-top: 0;
+}
+/*ここまでcommit*/
+/*ここからinfo*/
+#info section {
+	margin-bottom: 1rem;
+/*	レスポンシブのみ*/
+}
+.gmap {
+	width: 80%;
+	height: 0;
+	margin: auto;
+	overflow: hidden;
+	padding-bottom: 65.8%;
+	position: relative;
+	margin-bottom: 1rem;
+}
+.gmap iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.info_detail {
+	width: 70%;
+	margin: auto;
+}
+.info_detail table {
+	border: 1px solid #2c2c2c;
+	border-collapse: collapse;
+	width: 100%;
+}
+.info_detail table caption {
+	padding: 1rem;
+	font-weight: bold;
+}
+.info_detail table caption:before,
+.info_detail table caption:after {
+	content: "-";
+	margin: 0 1rem;
+}
+.info_detail table tr,
+.info_detail table th,
+.info_detail table td {
+	border: 1px solid #2c2c2c;
+}
+.info_detail table th,
+.info_detail table td {
+	padding: 1rem;
+}
+.info_detail table th {
+	width: 35%;
+	background-color: #454545;
+	color: #fff;
+}
+.info_detail table td {
+	width: 65%;
+}
+/*ここまでinfo*/
+/*ここからcontact*/
+#contact section {
+	margin-bottom: 1rem;
+}
+#contact form {
+	user-select: none;
+	width: 70%;
+	margin: auto;
+}
+#contact .question_kind {
+	display: none;
+/*	上に同じようなの作ったから消す*/
+}
+#contact .select_kind,
+#contact .name,
+#contact .email,
+#contact .seibetu,
+#contact .question_kind,
+#contact .freedom,
+#contact .trigger {
+	margin-bottom: 3rem;
+}
+#contact .attention {
+	color: #FF161A;
+	margin: 0 0.5rem;
+}
+#contact .select_kind {
+	margin-top: 2rem;
+}
+#contact .select_kind select {
+	font-size: 0.8em;
+}
+#contact .email p {
+	margin: 0.5rem 0;
+}
+#contact .email .email1 {
+	margin-bottom: 1rem;
+}
+#contact .kind {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+#contact .not_text {
+	margin-bottom: 0.6rem;
+}
+#contact .check {
+	display: block;
+}
+#contact .check:before,
+#contact .radio:before {
+	content: "";
+	margin: 0 1rem;
+}
+input[type="text"],
+#contact .freedom textarea {
+	width: 100%;
+	height: 4rem;
+}
+#contact .freedom textarea {
+	height: 10rem;
+}
+#contact .send {
+	display: block;
+	width: 100%;
+	height: 7rem;
+	margin: auto;
+	background-color: #A2A2A2;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+#contact .send:hover {
+	background-color: #767676;
+	transition: 0.2s;
+}
+#contact .send:active {
+	background-color: #2c2c2c;
+}
+/*ここまでcontact*/
+/*ここからslideshow*/
+#main_graphic ul {
+	position: relative;
+	list-style: none;
+	padding-left: 0;
+}
+#main_graphic ul li {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+#main_graphic ul li.now {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 1;
+}
+/*ここまでslideshow*/
+/*ここからmenu_iroiro*/
+#menu_iroiro section {
+	min-width: 320px;
+	margin-bottom: 1rem;
+/*	レスポンシブのみ*/
+}
+#menu_iroiro .detail_menu {
+	margin-bottom: 1rem;
+}
+#menu_iroiro .detail_menu .detail_menu_1,
+#menu_iroiro .detail_menu .detail_menu_2,
+#menu_iroiro .detail_menu .detail_menu_3,
+#menu_iroiro .detail_menu .detail_menu_4 {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+}
+#menu_iroiro .detail_menu .menu_photo {
+	width: 54.3%;
+}
+#menu_iroiro .detail_menu .menu_ex {
+	width: 45.7%;
+}
+#menu_iroiro .detail_menu p {
+	margin: 0;
+}
+#menu_iroiro .detail_menu img {
+	width: 100%;
+	vertical-align: middle;
+}
+#menu_iroiro .change_menu {
+	border-top: 1px solid #b08323;
+	padding-top: 1rem;
+}
+#menu_iroiro .change_menu ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	margin: 0;
+}
+#menu_iroiro .change_menu ul li {
+	width: 20%;
+	padding-left: 2.5%;
+}
+#menu_iroiro .change_menu ul li:first-child {
+	padding-left: 0;
+}
+#menu_iroiro .change_menu ul li a {
+	display: block;
+	text-indent: -9999px;
+	background-size: contain;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 0;
+	width: 100%;
+	padding-bottom: 22%;
+}
+#menu_iroiro .change_menu ul .kashi a {
+	background-image: url(../images/kashi.jpg);
+}
+#menu_iroiro .change_menu ul .souzai a {
+	background-image: url(../images/souzai.jpg);
+}
+#menu_iroiro .change_menu ul .sonota a {
+	background-image: url(../images/sonota.jpg);
+}
+#menu_iroiro .change_menu ul .drink a {
+	background-image: url(../images/drink.jpg);
+}
+/*ここまでmenu_iroiro*/
+/*ここからcreambox*/
+#creambox #cream_main_gra p {
+	margin: 0;
+}
+#creambox #cream_main_gra p img {
+	width: 100%;
+	max-width: 1920px;
+	vertical-align: middle;
+}
+#creambox #main_out {
+	width: 100%;
+	background-image: url(../images/creambox_illust_sm.jpg);
+}
+#creambox #main {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 3rem;
+	border-left: 1px solid #b08323;
+	border-right: 1px solid #b08323;
+	background-color: rgba(255,255,255,0.8);
+	background-blend-mode: saturation;
+}
+#creambox .ex_cream h3 {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 0;
+	padding-top: 1em;
+}
+#creambox .sourse {
+	width: 70%;
+	margin-left: auto;
+	margin-bottom: 3rem;
+}
+#creambox .sourse p {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#creambox .go_menu {
+	margin-bottom: 3rem;
+}
+#creambox .go_menu p {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#creambox .go_menu p a {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 33.4%;
+	text-indent: -9999px;
+	background-image: url(../images/menu_btn.jpg);
+	background-size: contain;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+#creambox #scroll p {
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+}
+/*ここまでcreambox*/
+/*ここからpointcard*/
+#pointcard #main_out {
+	width: 100%;
+	position: relative;
+}
+#pointcard #main_out p.point_gra {
+	margin: 0;
+}
+#pointcard #main_out img {
+	width: 100%;
+	vertical-align: middle;
+}
+#pointcard #main {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 3rem;
+	background-color: rgba(255,255,255,1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 300px;
+	transform: translate(-50%,-50%);
+	border-radius: 30px;
+}
+#pointcard #main .ex_point {
+	margin-bottom: 2rem;
+}
+#pointcard #main .ex_point h2 {
+	text-align: center;
+}
+#pointcard .go_menu {
+	margin-bottom: 2rem;
+}
+#pointcard .go_menu p {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pointcard .go_menu p a {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 33.4%;
+	text-indent: -9999px;
+	background-image: url(../images/menu_btn.jpg);
+	background-size: contain;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+#pointcard #scroll p {
+	margin-left: auto;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+}
+/*ここまでpointcard*/
